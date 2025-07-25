@@ -1,4 +1,4 @@
-module github.com/HoronLee/cmm
+module github.com/HoronLee/ctr-mirror-manager
 
 go 1.24.5
 
