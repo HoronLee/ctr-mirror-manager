@@ -58,7 +58,7 @@ $ ctr-mirror-manager apply -c mirror.toml
 ```
 
 参数说明：
-- `-c, --config`: 指定配置文件路径（必需）
+- `-c, --config`: 指定配置文件路径
 
 ## 检查配置
 
@@ -75,7 +75,7 @@ $ ctr-mirror-manager check -c mirror.toml
 ```
 
 参数说明：
-- `-c, --config`: 指定配置文件路径（可选，用于读取 `certs_dir`）
+- `-c, --config`: 指定配置文件路径
 
 ## 恢复备份
 
@@ -89,4 +89,4 @@ $ ctr-mirror-manager restore -c mirror.toml
 ```
 
 参数说明：
-- `-c, --config`: 指定配置文件路径（可选，用于读取 `certs_dir`）
+- `-c, --config`: 指定配置文件路径
