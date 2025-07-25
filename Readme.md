@@ -42,14 +42,14 @@ server = "https://harbor.local.com"
 
 # 使用方法
 
-cmm 是一个命令行工具，提供多个子命令来管理 Containerd 的镜像配置。
+ctr-mirror-manager 是一个命令行工具，提供多个子命令来管理 Containerd 的镜像配置。
 
 ## 应用配置
 
 使用 `apply` 子命令应用镜像配置：
 
 ```shell
-$ cmm apply -c mirror.toml
+$ ctr-mirror-manager apply -c mirror.toml
 
 目录 /etc/containerd/certs.d 不存在，已自动创建
 已更新: /etc/containerd/certs.d/docker.io/hosts.toml
@@ -65,7 +65,7 @@ $ cmm apply -c mirror.toml
 使用 `check` 子命令检查当前镜像配置状态：
 
 ```shell
-$ cmm check -c mirror.toml
+$ ctr-mirror-manager check -c mirror.toml
 
 正在检查 /etc/containerd/certs.d 目录的配置...
 备份目录 /etc/containerd/certs.d.bak 不存在
@@ -82,7 +82,7 @@ $ cmm check -c mirror.toml
 如果配置出现问题，可以使用 `restore` 子命令恢复之前的备份：
 
 ```shell
-$ cmm restore -c mirror.toml
+$ ctr-mirror-manager restore -c mirror.toml
 
 正在从 /etc/containerd/certs.d.bak 恢复备份...
 备份恢复成功
